@@ -72,7 +72,7 @@ function initNavigation() {
 
 function initRevealAnimations() {
     const staticTargets = document.querySelectorAll(
-        '.hero-panel, #avatar, .section-panel, .footer-panel'
+        '.hero-title-wrap, #avatar, .section-panel, .footer-panel'
     );
 
     if ('IntersectionObserver' in window && !prefersReducedMotion) {
@@ -121,7 +121,7 @@ function registerRevealElements(elements, startDelay) {
 }
 
 function initInteractivePanels() {
-    const panels = document.querySelectorAll('.hero-panel, .section-panel, .footer-panel');
+    const panels = document.querySelectorAll('.section-panel, .footer-panel');
 
     panels.forEach((panel) => {
         if (panel.dataset.interactiveBound === 'true') {

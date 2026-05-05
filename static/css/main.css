@@ -183,8 +183,8 @@ a:hover {
 .top-section {
     --hero-shift: 0px;
     position: relative;
-    min-height: 31rem;
-    padding: 11rem 0 7rem;
+    min-height: 27.5rem;
+    padding: 9.2rem 0 5.2rem;
     overflow: hidden;
     background:
         linear-gradient(135deg, rgba(2, 8, 20, 0.36), rgba(4, 10, 24, 0.78)),
@@ -219,6 +219,7 @@ a:hover {
 .top-section h2 {
     margin-bottom: 0;
     font-weight: 600;
+    line-height: 1.05;
     text-shadow: 0 16px 44px rgba(2, 8, 20, 0.4);
 }
 
@@ -227,6 +228,11 @@ a:hover {
     z-index: 1;
     transform: translate3d(0, var(--hero-shift), 0);
     transition: transform 0.18s linear;
+}
+
+.hero-title-wrap {
+    max-width: 46rem;
+    padding-top: 0.35rem;
 }
 
 .hero-panel,
@@ -423,6 +429,10 @@ section .main-body {
 }
 
 .hero-panel.reveal-on-scroll {
+    transform: translateY(26px) scale(0.98);
+}
+
+.hero-title-wrap.reveal-on-scroll {
     transform: translateY(26px) scale(0.98);
 }
 
@@ -686,8 +696,8 @@ footer a:focus {
     }
 
     .top-section {
-        min-height: 27rem;
-        padding: 8.5rem 0 5.25rem;
+        min-height: 24rem;
+        padding: 7.5rem 0 4.3rem;
     }
 
     .hero-panel,
@@ -733,8 +743,8 @@ footer a:focus {
     }
 
     .top-section {
-        min-height: 24rem;
-        padding: 7.6rem 0 4.6rem;
+        min-height: 21.5rem;
+        padding: 6.9rem 0 3.7rem;
     }
 
     .top-section h2 {
