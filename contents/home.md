@@ -1,14 +1,23 @@
-[![小云](https://img.shields.io/badge/xy200303-github-blue?logo=github)](https://github.com/xy200303)
-<a href="https://github.com/xy200303"><img src="https://komarev.com/ghpvc/?username=xy200303-home&label=Profile+Views" alt="Profile Views" title="Profile Views" /></a>
+欢迎来到我的个人主页。我目前就读于**湖北经济学院电子商务专业（本科）**，持续聚焦**全栈开发、大模型应用、RAG、智能体系统**等方向，兼具工程落地与科研实践经验。
 
-「全栈BUG工程师」​专业制造优雅的运行时异常，擅长在需求与bug之间找到完美平衡点，SCI/CCF TOP期刊学术混子一枚，擅长在机器学习、Python开发、Golang后端开发领域写屎山代码
+### 教育背景
+- 湖北经济学院
+- 专业：电子商务（本科）
+- 时间：2022.09 - 2026.06
 
-#### 个人主页  
-- 📫 CSDN：[极客小云](https://blog.csdn.net/m0_73370855?type=blog)
-- 🔬 ORCID：[0009-0008-4777-304X](https://orcid.org/0009-0008-4777-304X)
+### 综合经历
+- 在 CSDN、阿里云社区、微信公众号持续输出技术博客，累计收获 **12 万+ 阅读量**、**6000+ 粉丝**。
+- 参与 **X-AnyLabeling、LangChain、AutoGen** 等 GitHub 开源项目。
+- 发表机器学习、物联网相关领域 **SCI / CCF 顶刊论文 5 篇**。
+- 申请 / 授权 **国家级发明专利 7 项**、**软件著作权 5 项**。
 
-#### 个人技能
-<p align="center">
-    <!-- https://github.com/LelouchFR/skill-icons -->
-    <img width="800" height="32" src="https://go-skill-icons.vercel.app/api/icons?i=py,html,css,golang,java,git,huggingface&titles=true" alt="Skill Icons" title="Skill Icons">
-</p>
+### 专业技能
+- 编程语言：熟练使用 Python、Java、Golang，可独立完成数据分析与后端开发项目。
+- 数据库技术：熟练使用 MySQL、MongoDB、SQLite，熟悉 Neo4j、Nebula 等图数据库。
+- Prompt Engineering：掌握 Few-shot、Zero-shot、CoT、指令微调等提示设计方法，可有效优化模型输出质量。
+- AIGC 能力：熟练使用 Vibecoding 等 AI 辅助开发方式，能够显著提升项目开发效率。
+- 智能体开发：熟练进行 Dify 部署、二次开发与使用，具备 Coze、HiAgent 开发经验，熟悉阿里云百炼、百度千帆、腾讯混元等平台集成。
+- RAG：熟悉向量数据库（Milvus、Pinecone、FAISS）、文本嵌入模型及检索策略设计，能够围绕幻觉控制与检索时延进行优化。
+
+### 个人评价
+学习与实践能力突出，能够快速掌握机器学习、大模型等前沿技术；擅长将理论研究转化为实际系统，在算法创新、全栈开发与项目协作之间保持良好平衡，能够高效推动项目高质量交付。

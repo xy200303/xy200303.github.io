@@ -80,8 +80,14 @@
 </head>
 
 <body id="page-top">
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div class="page-backdrop" aria-hidden="true">
+        <span class="backdrop-orb orb-left"></span>
+        <span class="backdrop-orb orb-right"></span>
+    </div>
+
     <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav class="header navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container px-5">
             <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
             <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
@@ -93,16 +99,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#home">HOME</a>
+                        <a class="nav-link me-lg-3" href="#home">首页</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
+                        <a class="nav-link me-lg-3" href="#awards">荣誉奖项</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#experience">EXPERIENCE</a>
+                        <a class="nav-link me-lg-3" href="#experience">项目经历</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
+                        <a class="nav-link me-lg-3" href="#publications">个人成果</a>
                     </li>
                 </ul>
             </div>
@@ -110,10 +116,16 @@
     </nav>
 
     <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+    <section class="top-section">
         <div class="top-section-content">
             <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+                <div class="hero-panel">
+                    <div class="hero-panel-line"></div>
+                    <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+                    <div class="hero-scroll-cue" aria-hidden="true">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -122,54 +134,60 @@
     <!-- Photo -->
     <div class="container px-5">
         <div id="avatar">
-            <img class="shadow" src="https://avatars.githubusercontent.com/u/130276203?v=4">
+            <img class="shadow" src="https://avatars.githubusercontent.com/u/130276203?v=4" alt="Avatar">
         </div>
     </div>
     <!-- Photo -->
 
     <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+    <section class="content-section bg-gradient-primary-to-secondary-light mt5 md5" id="home">
         <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
+            <div class="section-panel">
+                <header>
+                    <h2 id="home-subtitle"> </h2>
+                    <!-- <span class="bi bi-list"></span> -->
+                </header>
+                <div class="main-body" id="home-md"></div>
+            </div>
         </div>
     </section>
     <!-- Home -->
 
     <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+    <section class="content-section bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
         <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
-
+            <div class="section-panel">
+                <header>
+                    <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i> 荣誉奖项 </h2>
+                </header>
+                <div class="main-body" id="awards-md"></div>
+            </div>
         </div>
     </section>
     <!-- Awards -->
 
     <!-- Experience -->
-    <section class="bg-gradient-primary-to-secondary-dark mt5 md5" id="experience">
+    <section class="content-section bg-gradient-primary-to-secondary-dark mt5 md5" id="experience">
         <div class="container px-5">
-            <header>
-                <h2 id="experience-subtitle"><i class="bi bi-briefcase-fill"></i> EXPERIENCE </h2>
-            </header>
-            <div class="main-body" id="experience-md"></div>
+            <div class="section-panel">
+                <header>
+                    <h2 id="experience-subtitle"><i class="bi bi-briefcase-fill"></i> 项目与实习经历 </h2>
+                </header>
+                <div class="main-body" id="experience-md"></div>
+            </div>
         </div>
     </section>
     <!-- Experience -->
 
     <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+    <section class="content-section bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
         <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
+            <div class="section-panel">
+                <header>
+                    <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;个人成果</h2>
+                </header>
+                <div class="main-body" id="publications-md"></div>
+            </div>
         </div>
     </section>
     <!-- Publications  -->
@@ -177,12 +195,14 @@
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
         <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link"
-                    href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+            <div class="footer-panel">
+                <div class="text-white-50 small">
+                    <div id="copyright-text" class="mb-2"></div>
+                    <a id="github-link" href="https://github.com/senli1073">Github</a>
+                    <span class="mx-1">&middot;</span>
+                    <a id="license-link"
+                        href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+                </div>
             </div>
         </div>
     </footer>
