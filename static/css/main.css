@@ -74,6 +74,17 @@ a:hover {
     height: 100%;
     z-index: -3;
     pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0, calc(var(--backdrop-shift, 0px) * 0.55), 0);
+    transition: transform 0.18s linear;
+}
+
+#starfield canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0.96;
+    filter: saturate(1.08) contrast(1.04);
 }
 
 .page-backdrop {
@@ -751,6 +762,7 @@ footer a:focus {
 }
 
 @media (prefers-reduced-motion: reduce) {
+    #starfield,
     .backdrop-orb,
     .page-backdrop,
     .top-section .top-section-content,
